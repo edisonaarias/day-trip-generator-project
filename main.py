@@ -1,14 +1,14 @@
 import random
 
-# list of destinations - 'destinations'
+# # list of destinations - 'destinations'
 destinations = ['las vegas', 'henderson', 'prim']
 
-# An option from the list 'destinations' is selected
-# by random.choice()
+# # An option from the list 'destinations' is selected
+# # by random.choice()
 print(random.choice(destinations))
 
 
-# list of restaurants - 'restaurants' 
+# # # list of restaurants - 'restaurants' 
 restaurants = ['five guys', 'red robins', 'china tango']
 
 # An option from the list 'restaurants' is selected
@@ -23,14 +23,14 @@ transportations = ['car', 'bus', 'uber']
 print(random.choice(transportations))
 
 
-# list of entertainments - 'entertainments'
+# # # list of entertainments - 'entertainments'
 entertainments = ['movie', 'cirus cirus', 'rave']
 
-# An option form the list 'entertainments' is selected
+# # # An option form the list 'entertainments' is selected
 # by random.choice()
 print(random.choice(entertainments))
 
-# Next step - print the total trip to your user
+# # # Next step - print the total trip to your user
 
 random_destinations = random.choice(destinations)
 print(random_destinations)
@@ -101,4 +101,25 @@ while is_the_entertainment_tremendous is True:
     elif randomly_re_select == 'no':
         print('tranit is great')
         random_entertainment = random.choice(entertainments)
-        
+
+
+# Confirm the completed trip:
+# 1. Print all of their choices
+#     Can use random_transportations, random_restaurants, random_entertainments, random_locations variables
+#     We can print them to the console to display completed trip
+# 2. Get user input - did they like the trip?
+# 3. If they do like the trip, we can print "Day trip complete, thank you!"
+# 4. Elif they don't like the trip, we can print "Day trip incompatable!"
+
+
+print(random_transportations , random_entertainments , random_destinations , random_entertainments)
+
+select_an_option = input('complete or incomplete')
+
+if select_an_option == 'complete':
+    print('trip complete')
+    
+elif select_an_option == 'incomplete':
+    print('imcomplete')
+   
+
